@@ -3,74 +3,171 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Projects by Feutse Gaetan - Web Developer & Technical Consultant">
   <link rel="stylesheet" href="css/main.css">
-  <title>Feutse Gaetan Projects</title>
+  <title>Projects · Feutse Gaetan</title>
 </head>
 <body>
-  <header>
-    <div class="menu-btn">
-      <span class="menu-btn__burger"></span>
-    </div>
 
-    <nav class="nav">
-      <ul class="menu-nav">
-        <li class="menu-nav__item">
-          <a href="index.html" class="menu-nav__link">
-            Home
-          </a>
-        </li>
-        <li class="menu-nav__item">
-          <a href="about.html" class="menu-nav__link">
-            About Me
-          </a>
-        </li>
-        <li class="menu-nav__item active">
-          <a href="projects.html" class="menu-nav__link">
-            My Projects
-          </a>
-        </li>
-        <li class="menu-nav__item">
-          <a href="contact.html" class="menu-nav__link">
-            Contact Me
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <div class="progress-bar"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar scrolled">
+    <a href="index.html" class="navbar__logo">F<span>G</span></a>
+    <ul class="navbar__links">
+      <li><a href="index.html" class="navbar__link">Home</a></li>
+      <li><a href="about.html" class="navbar__link">About</a></li>
+      <li><a href="projects.html" class="navbar__link active">Projects</a></li>
+      <li><a href="contact.html" class="navbar__link">Contact</a></li>
+    </ul>
+    <div class="hamburger" aria-label="Toggle menu">
+      <span class="hamburger__bar"></span>
+      <span class="hamburger__bar"></span>
+      <span class="hamburger__bar"></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="nav-overlay">
+    <ul class="nav-overlay__links">
+      <li class="nav-overlay__item"><a href="index.html" class="nav-overlay__link">Home</a></li>
+      <li class="nav-overlay__item"><a href="about.html" class="nav-overlay__link">About</a></li>
+      <li class="nav-overlay__item"><a href="projects.html" class="nav-overlay__link active">Projects</a></li>
+      <li class="nav-overlay__item"><a href="contact.html" class="nav-overlay__link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="page-header__bg"></div>
+    <div class="page-header__overlay"></div>
+    <div class="page-header__content container">
+      <p class="page-header__label">What I've built</p>
+      <h1 class="page-header__title">My <span style="color:var(--primary)">Projects</span></h1>
+    </div>
+  </div>
 
   <main>
-    <section class="projects">
-      <div class="projects__bio-image">
-        <h1 class="text-secondary">My Projects</h1>
-      </div>
+    <section class="section">
+      <div class="container">
 
-      <div class="projects__items">
-        <div class="projects__item">
-          <img src="img/project-1.jpg" alt="My Project">
-          <div class="projects__btns">
-            <a href="#!" class="projects__btn">
-              <i class="fas fa-eye"></i> B.Tech College event Management system
-            </a>
-            <a href="#!" class="projects__btn">
-              <i class="fab fa-github"></i> http://eventerx.herokuapp.com/
-            </a>
+        <div class="projects-grid">
+
+          <!-- Jobmassa -->
+          <div class="project-card reveal">
+            <div class="project-card__image">
+              <img src="img/project-3.jpg" alt="Jobmassa platform">
+              <div class="project-card__overlay">
+                <a href="https://jobmassa.com/" target="_blank" class="project-card__link">
+                  <i class="fas fa-external-link-alt"></i> Visit Site
+                </a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Jobmassa</h3>
+              <p class="project-card__desc">A market service platform connecting clients with skilled professionals. Built and led as Founder & CEO, with full-stack architecture, API integrations, and payment processing.</p>
+              <div class="project-card__tags">
+                <span class="project-card__tag">Full Stack</span>
+                <span class="project-card__tag">Platform</span>
+                <span class="project-card__tag">Founder</span>
+              </div>
+            </div>
           </div>
+
+          <!-- YBO Services -->
+          <div class="project-card reveal delay-1">
+            <div class="project-card__image">
+              <img src="img/project-2.jpg" alt="YBO Services ERP">
+              <div class="project-card__overlay">
+                <a href="https://www.ybo-services.com/" target="_blank" class="project-card__link">
+                  <i class="fas fa-external-link-alt"></i> Visit Site
+                </a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">YBO Services</h3>
+              <p class="project-card__desc">Custom ODOO ERP module development and system integration for YBO Services Limited. Streamlined internal business processes and reporting workflows.</p>
+              <div class="project-card__tags">
+                <span class="project-card__tag">ODOO ERP</span>
+                <span class="project-card__tag">Full Stack</span>
+                <span class="project-card__tag">Business</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event Management -->
+          <div class="project-card reveal delay-2">
+            <div class="project-card__image">
+              <img src="img/project-1.jpg" alt="College Event Management System">
+              <div class="project-card__overlay">
+                <a href="http://eventerx.herokuapp.com/" target="_blank" class="project-card__link">
+                  <i class="fas fa-external-link-alt"></i> View Demo
+                </a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">B.Tech Event Manager</h3>
+              <p class="project-card__desc">A full-featured college event management system for B.Tech institutions. Handles event creation, registration, scheduling, and attendee management.</p>
+              <div class="project-card__tags">
+                <span class="project-card__tag">Web App</span>
+                <span class="project-card__tag">Event Management</span>
+                <span class="project-card__tag">PHP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CAMTEL IP Tool -->
+          <div class="project-card reveal delay-3">
+            <div class="project-card__image">
+              <img src="img/project-4.jpg" alt="IP Management Tool">
+              <div class="project-card__overlay">
+                <div class="project-card__link outline" style="cursor:default;">
+                  <i class="fas fa-lock"></i> Internal Tool
+                </div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">IP Address Management Tool</h3>
+              <p class="project-card__desc">Developed during internship at CAMTEL — a tool for managing and monitoring IP address allocations across the national telecom backbone network.</p>
+              <div class="project-card__tags">
+                <span class="project-card__tag">Networking</span>
+                <span class="project-card__tag">PHP</span>
+                <span class="project-card__tag">Telecom</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- FTTH Maintenance App -->
+          <div class="project-card reveal delay-4">
+            <div class="project-card__image">
+              <img src="img/project-5.jpg" alt="FTTH Maintenance App">
+              <div class="project-card__overlay">
+                <div class="project-card__link outline" style="cursor:default;">
+                  <i class="fas fa-lock"></i> Internal Tool
+                </div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">FTTH Maintenance Manager</h3>
+              <p class="project-card__desc">Built at Creolink Communication — a web application to manage the maintenance and monitoring of fiber-to-the-home (FTTH) infrastructure.</p>
+              <div class="project-card__tags">
+                <span class="project-card__tag">Fiber Optics</span>
+                <span class="project-card__tag">Web App</span>
+                <span class="project-card__tag">Infrastructure</span>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="projects__item">
-          <img src="img/project-2.jpg" alt="My Project">
-          <div class="projects__btns">
-            <a href="#!" class="projects__btn">
-              <i class="fas fa-eye"></i> YBO-Services project
-            </a>
-            <a href="#!" class="projects__btn">
-              <i class="fab fa-github"></i>https://www.ybo-services.com/
-            </a>
-      <footer>&copy; Copyright 2022</footer>
+      </div>
     </section>
   </main>
 
-  <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
+  <footer class="site-footer">
+    &copy; 2024 <span>Feutse Gaetan</span>. All rights reserved.
+  </footer>
+
+  <script src="https://kit.fontawesome.com/6d2ea823d0.js" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

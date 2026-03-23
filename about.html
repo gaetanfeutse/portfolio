@@ -3,128 +3,243 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="About Feutse Gaetan - Web Developer, Technical Consultant & CEO">
   <link rel="stylesheet" href="css/main.css">
-  <title>About Feutse Gaetan</title>
+  <title>About · Feutse Gaetan</title>
 </head>
 <body>
-  <header>
-    <div class="menu-btn">
-      <span class="menu-btn__burger"></span>
-    </div>
 
-    <nav class="nav">
-      <ul class="menu-nav">
-        <li class="menu-nav__item">
-          <a href="index.html" class="menu-nav__link">
-            Home
-          </a>
-        </li>
-        <li class="menu-nav__item active">
-          <a href="about.html" class="menu-nav__link">
-            About Me
-          </a>
-        </li>
-        <li class="menu-nav__item">
-          <a href="projects.html" class="menu-nav__link">
-            My Projects
-          </a>
-        </li>
-        <li class="menu-nav__item">
-          <a href="contact.html" class="menu-nav__link">
-            Contact Me
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <div class="progress-bar"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar scrolled">
+    <a href="index.html" class="navbar__logo">F<span>G</span></a>
+    <ul class="navbar__links">
+      <li><a href="index.html" class="navbar__link">Home</a></li>
+      <li><a href="about.html" class="navbar__link active">About</a></li>
+      <li><a href="projects.html" class="navbar__link">Projects</a></li>
+      <li><a href="contact.html" class="navbar__link">Contact</a></li>
+    </ul>
+    <div class="hamburger" aria-label="Toggle menu">
+      <span class="hamburger__bar"></span>
+      <span class="hamburger__bar"></span>
+      <span class="hamburger__bar"></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="nav-overlay">
+    <ul class="nav-overlay__links">
+      <li class="nav-overlay__item"><a href="index.html" class="nav-overlay__link">Home</a></li>
+      <li class="nav-overlay__item"><a href="about.html" class="nav-overlay__link active">About</a></li>
+      <li class="nav-overlay__item"><a href="projects.html" class="nav-overlay__link">Projects</a></li>
+      <li class="nav-overlay__item"><a href="contact.html" class="nav-overlay__link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="page-header__bg"></div>
+    <div class="page-header__overlay"></div>
+    <div class="page-header__content container">
+      <p class="page-header__label">Get to know me</p>
+      <h1 class="page-header__title">About <span style="color:var(--primary)">Me</span></h1>
+    </div>
+  </div>
 
   <main>
-    <section class="about">
-      <div class="about__bio-image">
-        <div class="about__bio">
-          <h2 class="text-secondary">BIO</h2>
-          <p>Tech is my best field, learn by error and teaching others is my best way of acquired knowledge. I am a self-motivated developer with my favourite field database, web and graphic design, software design, internet security, networking, computer maintenance and IT service, IA, and big data. .</p>
+    <!-- Bio -->
+    <section class="section">
+      <div class="container">
+        <div class="bio-card reveal">
+          <p class="section-label">Bio</p>
+          <p>Tech is my best field — I learn by doing and by teaching others. I'm a self-motivated developer with a passion for database architecture, web development, graphic design, software engineering, internet security, networking, AI, and big data. I love building products that solve real problems and push boundaries.</p>
+        </div>
+
+        <!-- Skills -->
+        <div class="skills-section reveal delay-1">
+          <p class="section-label">Skills & Technologies</p>
+          <h2 class="section-title">What I Work With</h2>
+          <div class="skills-grid">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML & CSS</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">LLM Integration</span>
+            <span class="skill-tag">Adobe Campaign</span>
+            <span class="skill-tag">Mautic</span>
+            <span class="skill-tag">Open Loyalty</span>
+            <span class="skill-tag">CRM Systems</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">ODOO ERP</span>
+            <span class="skill-tag">WordPress</span>
+            <span class="skill-tag">Network Administration</span>
+            <span class="skill-tag">VOIP & Fiber</span>
+            <span class="skill-tag">Database Design</span>
+            <span class="skill-tag">Cloud Infrastructure</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Technical Support</span>
+          </div>
+        </div>
+
+        <!-- Experience Timeline -->
+        <div>
+          <p class="section-label reveal">Experience</p>
+          <h2 class="section-title reveal delay-1">My Journey</h2>
+
+          <div class="timeline">
+
+            <!-- Jobmassa -->
+            <div class="timeline__item reveal">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card">
+                <div class="timeline__header">
+                  <span class="timeline__company">
+                    <a href="https://jobmassa.com/" target="_blank">Jobmassa</a>
+                  </span>
+                  <span class="timeline__period">Present</span>
+                </div>
+                <p class="timeline__role">Founder &amp; CEO</p>
+                <p class="timeline__type">Market Service Platform</p>
+                <ul class="timeline__tasks">
+                  <li>Founded and lead Jobmassa, a market service platform connecting clients with skilled professionals.</li>
+                  <li>Architected and developed the full-stack web platform using modern web technologies.</li>
+                  <li>Designed and implemented the database schema and RESTful APIs.</li>
+                  <li>Built and maintained the front-end interface for a seamless user experience.</li>
+                  <li>Integrated payment gateways and third-party APIs to support platform operations.</li>
+                  <li>Managed deployment, cloud infrastructure, and ongoing platform maintenance.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Qilinsa Full-time -->
+            <div class="timeline__item reveal delay-1">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card">
+                <div class="timeline__header">
+                  <span class="timeline__company">Qilinsa</span>
+                  <span class="timeline__period">Dec 2024 – Present</span>
+                </div>
+                <p class="timeline__role">Technical Consultant</p>
+                <p class="timeline__type">Full-time · 1 yr 4 mos</p>
+                <ul class="timeline__tasks">
+                  <li>Designed scalable platform leveraging LLM with React and Python.</li>
+                  <li>Adobe Campaign configuration and development.</li>
+                  <li>Open Loyalty configuration.</li>
+                  <li>Integrated CRM with multiple marketing platforms via APIs.</li>
+                  <li>Developed automated marketing workflows to ensure timely communication with clients.</li>
+                  <li>Utilized built-in analytics tools to assess and measure campaign performance.</li>
+                  <li>Integrated Mautic with CRM systems to synchronize customer data.</li>
+                  <li>Optimized campaign execution and monitoring processes to align with business targets.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Qilinsa Internship -->
+            <div class="timeline__item reveal delay-2">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card">
+                <div class="timeline__header">
+                  <span class="timeline__company">Qilinsa</span>
+                  <span class="timeline__period">Dec 2023 – Nov 2024</span>
+                </div>
+                <p class="timeline__role">Technical Consultant</p>
+                <p class="timeline__type">Internship · 1 yr · Cameroon, On-site</p>
+                <ul class="timeline__tasks">
+                  <li>Adobe Campaign configuration and development.</li>
+                  <li>Developed automated marketing workflows to ensure timely communication with clients.</li>
+                  <li>Utilized built-in analytics tools to assess and measure campaign performance.</li>
+                  <li>Integrated Mautic with CRM systems to synchronize customer data.</li>
+                  <li>Optimized campaign execution and monitoring processes to align with business targets.</li>
+                  <li>Skills: WordPress, Technical Support and more.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- YBO -->
+            <div class="timeline__item reveal delay-1">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card">
+                <div class="timeline__header">
+                  <span class="timeline__company">YBO Services Limited</span>
+                  <span class="timeline__period">Mar 2021 – Oct 2021</span>
+                </div>
+                <p class="timeline__role">Full Stack Developer</p>
+                <p class="timeline__type">Full-time</p>
+                <ul class="timeline__tasks">
+                  <li>Development and customization of ODOO ERP modules.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Creolink -->
+            <div class="timeline__item reveal delay-2">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card">
+                <div class="timeline__header">
+                  <span class="timeline__company">Creolink Communication</span>
+                  <span class="timeline__period">Sep 2020 – Nov 2020</span>
+                </div>
+                <p class="timeline__role">Network Administrator</p>
+                <p class="timeline__type">Internship</p>
+                <ul class="timeline__tasks">
+                  <li>Implemented a web application to manage maintenance of FTTH infrastructure.</li>
+                  <li>Server maintenance and installation of Windows Server 2016.</li>
+                  <li>Internet and TV deployment using fiber optic infrastructure.</li>
+                  <li>Fiber optic soldering and VOIP deployment.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- CAMTEL -->
+            <div class="timeline__item reveal delay-1">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card">
+                <div class="timeline__header">
+                  <span class="timeline__company">CAMTEL</span>
+                  <span class="timeline__period">Jun 2019 – Sep 2019</span>
+                </div>
+                <p class="timeline__role">PHP Web Developer</p>
+                <p class="timeline__type">Internship · Cameroon Telecommunications</p>
+                <ul class="timeline__tasks">
+                  <li>Implemented a tool for assistance in the management of IP addresses for CAMTEL Backbone.</li>
+                  <li>Network deployment, maintenance, and administration.</li>
+                  <li>Server maintenance and web application development.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- RASTOM -->
+            <div class="timeline__item reveal delay-2">
+              <div class="timeline__dot"></div>
+              <div class="timeline__card">
+                <div class="timeline__header">
+                  <span class="timeline__company">RASTOM SARL</span>
+                  <span class="timeline__period">Jun 2017 – Aug 2018</span>
+                </div>
+                <p class="timeline__role">Help Desk Technician</p>
+                <p class="timeline__type">Internship (2 terms)</p>
+                <ul class="timeline__tasks">
+                  <li>Software and hardware maintenance.</li>
+                  <li>Network maintenance and troubleshooting.</li>
+                  <li>After-sale services and customer support.</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
-
-      <div class="jobs">
-        <div class="jobs__job">
-          <h2 class="text-secondary">Mar 2021 - Oct 2021</h2>
-          <h3>YBO SERVICES LIMITED · Full-time</h3>
-          <h6>Full Stack Developer</h6>
-          <p>Development and customization of ODOO ERP modules.</p>
-        </div>
-
-      <div class="jobs">
-        <div class="jobs__job">
-          <h2 class="text-secondary">Sep 2020 - Nov 2020</h2>
-          <h3>Creolink Communication · Intern</h3>
-          <h6>Network Administrator</h6>
-          <p>THEME
-            IMPLEMENTATION OF A WEB APPLICATION TO MANAGE THE MAINTENANCE OF FTTH : CASE STUDY CEOLINK
-            
-            Other Tasks Performed:
-             server maintenance and installing windows 2016 
-             Internet and TV installment using fiber 
-             Fiber soldering 
-             VOIP deployment.</p>
-        </div>
-        <div class="jobs__job">
-          <h2 class="text-secondary">Jun 2019 - Sep 2019</h2>
-          <h3>CAMTEL (Cameroon Telecommunications) · Intern</h3>
-          <h6>PHP Web Developer</h6>
-          <p>I did my internship at Cameroon Telecommunication(CAMTEL) where i had the topic 
-            “IMPLEMENTATION OF A TOOL FOR ASSISTANCE IN THE MANAGEMENT OF IP ADDRESSES: CASE STUDY CAMTEL BACKBONE
-            ”
-            I also work on ADM and other transmission media.
-            
-            Tasks Performed:
-             server maintenance and installing windows 2016 
-             Network deployment and maintenance 
-             Network administration and configuration 
-             Web application development.</p>
-        </div>
-        <div class="jobs__job">
-          <h2 class="text-secondary">Jun 2018 - Aug 2018</h2>
-          <h3>RASTOM SARL · Interns</h3>
-          <h6>Help Desk Technician</h6>
-          <p>Task Perform:
-            Software and hardware maintenance 
-            Network maintenance 
-            After-sale services</p>
-        </div>
-        <div class="jobs__job">
-          <h2 class="text-secondary">Jun 2017 - Aug 2017</h2>
-          <h3>RASTOM SARL · Interns</h3>
-          <h6>Help Desk Technician</h6>
-          <p>Task Perform:
-            Software and hardware maintenance 
-            Network maintenance 
-            After-sale services</p>
-        </div>
-      </div>
-
-      <div class="social-icons">
-        <a href="#!">
-          <i class="fab fa-twitter fa-2x"></i>
-        </a>
-        <a href="#!">
-          <i class="fab fa-facebook fa-2x"></i>
-        </a>
-        <a href="#!">
-          <i class="fab fa-instagram fa-2x"></i>
-        </a>
-        <a href="#!">
-          <i class="fab fa-github fa-2x"></i>
-        </a>
-      </div>
-
-      <footer>&copy; Copyright 2022</footer>
     </section>
   </main>
 
-  <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
+  <footer class="site-footer">
+    &copy; 2024 <span>Feutse Gaetan</span>. All rights reserved.
+  </footer>
+
+  <script src="https://kit.fontawesome.com/6d2ea823d0.js" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

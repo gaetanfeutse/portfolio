@@ -3,72 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Feutse Gaetan - Web Developer, Technical Consultant & Founder of Jobmassa">
   <link rel="stylesheet" href="css/main.css">
-  <title>Feutse Gaetan Portfolio</title>
+  <title>Feutse Gaetan · Portfolio</title>
 </head>
 <body>
-  <header>
-    <div class="menu-btn">
-      <span class="menu-btn__burger"></span>
+
+  <div class="progress-bar"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar__logo">F<span>G</span></a>
+    <ul class="navbar__links">
+      <li><a href="index.html" class="navbar__link active">Home</a></li>
+      <li><a href="about.html" class="navbar__link">About</a></li>
+      <li><a href="projects.html" class="navbar__link">Projects</a></li>
+      <li><a href="contact.html" class="navbar__link">Contact</a></li>
+    </ul>
+    <div class="hamburger" aria-label="Toggle menu">
+      <span class="hamburger__bar"></span>
+      <span class="hamburger__bar"></span>
+      <span class="hamburger__bar"></span>
     </div>
+  </nav>
 
-    <nav class="nav">
-      <ul class="menu-nav">
-        <li class="menu-nav__item active">
-          <a href="index.html" class="menu-nav__link">
-            Home
-          </a>
-        </li>
-        <li class="menu-nav__item">
-          <a href="about.html" class="menu-nav__link">
-            About Me
-          </a>
-        </li>
-        <li class="menu-nav__item">
-          <a href="projects.html" class="menu-nav__link">
-            My Projects
-          </a>
-        </li>
-        <li class="menu-nav__item">
-          <a href="contact.html" class="menu-nav__link">
-            Contact Me
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Mobile Nav Overlay -->
+  <div class="nav-overlay">
+    <ul class="nav-overlay__links">
+      <li class="nav-overlay__item"><a href="index.html" class="nav-overlay__link active">Home</a></li>
+      <li class="nav-overlay__item"><a href="about.html" class="nav-overlay__link">About</a></li>
+      <li class="nav-overlay__item"><a href="projects.html" class="nav-overlay__link">Projects</a></li>
+      <li class="nav-overlay__item"><a href="contact.html" class="nav-overlay__link">Contact</a></li>
+    </ul>
+  </div>
 
-  <main>
-    <section class="home">
-      <h2>Hi! My Name Is</h2>
-      <h1 class="home__name">
-        Feutse <span class="home__name--last">Gaetan</span>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero__bg"></div>
+
+    <div class="hero__content">
+      <p class="hero__greeting">Hi there, I'm</p>
+      <h1 class="hero__name">
+        Feutse <span class="hero__name--accent">Gaetan</span>
       </h1>
-      <h2>
-        Web Developer, Designer & Programmer
-      </h2>
-
-      <div class="social-icons">
-        <a href="#!">
-          <i class="fab fa-twitter fa-2x"></i>
+      <p class="hero__subtitle">
+        <span id="typing"></span><span class="hero__cursor"></span>
+      </p>
+      <div class="hero__cta">
+        <a href="projects.html" class="btn btn-primary">
+          <i class="fas fa-eye"></i> View My Work
         </a>
-        <a href="#!">
-          <i class="fab fa-facebook fa-2x"></i>
-        </a>
-        <a href="#!">
-          <i class="fab fa-instagram fa-2x"></i>
-        </a>
-        <a href="#!">
-          <i class="fab fa-github fa-2x"></i>
+        <a href="contact.html" class="btn btn-outline">
+          <i class="fas fa-paper-plane"></i> Get In Touch
         </a>
       </div>
+    </div>
 
-      <footer>&copy; Copyright 2022</footer>
-    </section>
-  </main>
+    <div class="hero__social">
+      <a href="https://www.linkedin.com/in/gaetan-feutse/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://wa.me/+237695736963" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://jobmassa.com/" target="_blank" aria-label="Jobmassa"><i class="fas fa-globe"></i></a>
+    </div>
 
-  <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
+    <div class="hero__scroll">
+      <div class="hero__scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    &copy; 2024 <span>Feutse Gaetan</span>. All rights reserved.
+  </footer>
+
+  <script src="https://kit.fontawesome.com/6d2ea823d0.js" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
